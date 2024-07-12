@@ -38,7 +38,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 0rem 12% 0rem;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     display: flex;
@@ -84,7 +84,7 @@ body {
 
 }
 
-.b1{
+/* .b1{
     margin-top: 65px;
     margin-bottom: 0px;
     margin-left: 150px;
@@ -94,7 +94,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     background-color: rgb(255, 255, 255);
-}
+} */
 
 #menu-icon{
     font-size: 3.6rem;
@@ -519,7 +519,7 @@ span {
 }
 
 .testimonials-box img {
-    width: 46rem;   
+    width: 44rem;   
     border: 0px solid ;
     /* box-shadow: 0 0 25px var(--main-color); */
 
@@ -528,11 +528,11 @@ span {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .testimonial-item {
-    min-height: 430px;
+    min-height: 400px;
     max-width: 450px;
     background: #080808;
     border: 3px solid rgba(238, 238, 238, 0.3);
