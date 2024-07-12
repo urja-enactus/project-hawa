@@ -25,6 +25,8 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    transform: none;
+    zoom: 100%;
 }
 
 
@@ -84,17 +86,6 @@ body {
 
 }
 
-/* .b1{
-    margin-top: 65px;
-    margin-bottom: 0px;
-    margin-left: 150px;
-    width: 120px;
-    height: 50px;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: rgb(255, 255, 255);
-} */
 
 #menu-icon{
     font-size: 3.6rem;
@@ -153,12 +144,12 @@ span {
 
 .home-img {
     border-radius: 100%;
+    
 }
 
 .product{
-    
-    border-radius: 100%;
 
+    scale: 1.09;
 
 
 }
@@ -255,92 +246,6 @@ span {
 
 }
 
-.text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-.text-animation span {
-    position: relative;
-
-}
-
-.text-animation span:before {
-    content: "Web Developer";
-    color: var(--main-color);
-    animation: words 20s infinite;
-}
-
-.text-animation span:after {
-    content: '';
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor {
-    to {
-        border-left: 2px solid var(--main-color);
-    }
-}
-
-@keyframes words {
-
-    0%,
-    20% {
-        content: "Frontend Developer";
-    }
-
-    41%,
-    60% {
-        content: "Blockchain Developer";
-    }
-
-    61%,
-    80% {
-        content: "Web Designer";
-    }
-
-    81%,
-    100% {
-        content: "Content Creator";
-    }
-
-}
-
-@keyframes typing {
-
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95% {
-        width: 0;
-    }
-
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85% {
-        width: calc(100% + 8px);
-    }
-
-}
 
 
 /* education section design */
@@ -484,18 +389,21 @@ span {
     text-align: left;
     min-height: 200px;
     justify-content: left;
-    padding: 5rem 5rem;
+    padding: 4rem 4rem;
 }
 
 .service-info h4 {
+    text-decoration-line: underline;
     font-size: 3.2rem;
     font-weight: 800;
     line-height: 1;
-    padding-bottom: 1.2rem;
-}
+    padding-bottom: 1.5rem;
+    
+
+}   
 
 .service-info p {
-    font-size: 2rem;
+    font-size: 1.85rem;
     font-weight: 600;
     min-height: 100px;
     line-height: 1.7;
@@ -528,7 +436,7 @@ span {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .testimonial-item {
@@ -537,7 +445,7 @@ span {
     background: #080808;
     border: 3px solid rgba(238, 238, 238, 0.3);
     border-radius: 2rem;
-    margin: 0 2rem;
+    margin: 0.8rem 2rem;
     padding: 30px 60px;
     cursor: pointer;
     display: flex;
@@ -555,18 +463,18 @@ span {
     box-shadow: 0 0 50px var(--main-color);
 }
 
-.testimonial-item h2 {
+/* .testimonial-item h2 {
     font-size: 2.8rem;
-}
+} */
 
-.testimonial-item p {
+/* .testimonial-item p {
     font-size: 1.3rem;
-}
+} */
 
-#star {
+/* #star {
     color: gold;
     font-size: 2rem;
-}
+} */
 
 
 /* contact section design */
@@ -786,7 +694,8 @@ span {
 
     .home-content h1{
         font-size: 6rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.2rem;
     }
 
     .home-content p{
@@ -807,6 +716,32 @@ span {
 
     }
 
+    .service-info h4{
+           
+    }
+
+    .product{
+        scale: 1.8;
+    }
+
+    .wrapper{
+        scale: 0.7;
+
+    }
+
+    .heading{
+        scale: 0.7;
+        
+    }
+
+ 
+
+
+
+
+
+
+
 }
 
 @media (max-width:425px){
@@ -825,6 +760,63 @@ span {
         text-align: center;
         margin: 2rem 0;
     }
+
+    .product{
+        scale: 1.6;
+        margin-left: 12px;
+    }
+
+    .wrapper{
+        scale: 0.7;
+        
+    }
+
+   
+
+
+}
+
+
+@media (max-width:380px){
+
+    .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+        margin-top: 1rem;
+    }
+
+    .heading{
+        font-size: 4rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .product{
+        scale: 1.6;
+        margin-left: 12px;
+    }
+
+    .wrapper{
+        scale: 0.7;
+        
+    }
+
+    .service-info p{
+        font-size: 1.7rem;
+    }
+
+
+    .timeline-items{
+
+        scale: 0.95;
+
+    }
+   
+
+
 }
 
 
